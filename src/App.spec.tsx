@@ -29,11 +29,11 @@ describe("App Component", () => {
         await userEvent.type(inputElement, "Novo")
 
         userEvent.click(addButton)
-        
+
         const newItem = await findByText("Novo")
         expect(newItem).toBeInTheDocument()
 
-        debug()
+        // debug()
 
         // const inputElement = getByPlaceholderText("novo item")
         // userEvent.type(inputElement, "Novo")
